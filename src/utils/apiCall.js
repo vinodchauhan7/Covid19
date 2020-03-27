@@ -1,12 +1,14 @@
 import axios from "axios";
 var total_report = {};
 export const getReport = async () => {
-  return await axios.get("/AllReports").then(response => {
-    console.log(response.data.reports[0]);
-    // var data = processData(response.data, "confirm");
-    //getConfirmedDeath();
-    return response.data.reports[0];
-  });
+  return await axios
+    .get("https://covid19-server.chrismichael.now.sh/api/v1/AllReports")
+    .then(response => {
+      console.log(response.data.reports[0]);
+      // var data = processData(response.data, "confirm");
+      //getConfirmedDeath();
+      return response.data.reports[0];
+    });
 };
 
 export const getConfirmedDeath = async () => {

@@ -20,11 +20,20 @@ const GeoChartComponent = props => {
   }, [props, countryFeature]);
 
   const handleCountrySelection = feature => {
-    console.log(feature);
+    console.log(feature.properties.name.toLowerCase().trim());
+
     props.report[0].forEach(countryDetails => {
+      //console.log(countryDetails.Country.toLowerCase().trim());
       if (
         feature.properties.name.toLowerCase().trim() ===
         countryDetails.Country.toLowerCase().trim()
+      ) {
+        console.log(countryDetails);
+        setselectedCountryFeature(countryDetails);
+      }
+      if (
+        feature.properties.name.toLowerCase().trim() === "united states" &&
+        countryDetails.Country.toLowerCase().trim() === "usa"
       ) {
         console.log(countryDetails);
         setselectedCountryFeature(countryDetails);

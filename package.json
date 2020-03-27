@@ -3,7 +3,7 @@
     "version": "0.1.0",
     "private": true,
     "proxy": "https://covid19-server.chrismichael.now.sh/api/v1",
-    "homepage": "http://vinodchauhan7.github.io/my-app",
+    "homepage": "http://vinodchauhan7.github.io/COVID19",
     "dependencies": {
         "axios": "^0.19.2",
         "covid19-api": "^1.0.8",

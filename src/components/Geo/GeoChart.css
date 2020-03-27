@@ -1,0 +1,43 @@
+svg {
+    width: 100%;
+    height: 300px;
+    color: white;
+}
+
+svgCountry {
+    width: 100%;
+    height: 300px;
+    color: white;
+}
+
+svg .country:hover {
+    stroke: #00e3ff;
+    stroke-width: 1px;
+    cursor: pointer;
+}
+
+svg .label {
+    color: white;
+    stroke: white;
+}
+
+.countryWise {
+    display: flex;
+    justify-content: space-around;
+}
+
+.country {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #00e3ff;
+    padding: 10px 10px;
+}
+
+.countryMap {
+    display: block;
+}
+
+span {
+    color: white;
+    font-size: 24px;
+}

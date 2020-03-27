@@ -1,0 +1,39 @@
+.totalstat {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #1a2032;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid #00e3ff;
+    margin: 10px 10px;
+}
+
+.totalstat:hover {
+    color: #00e3ff;
+    border: 5px solid #00e3ff;
+}
+
+.totalstat .title {
+    text-align: center;
+}
+
+.totalstat .place {
+    text-align: center;
+    font-size: 12px;
+    margin-top: -2px;
+    margin-bottom: -6px;
+    opacity: 0.4;
+}
+
+.totalstat .value {
+    font-size: 30px;
+}
+
+.totalstat .value {
+    text-align: center;
+    font-size: 23px;
+    font-weight: bold;
+}

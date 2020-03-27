@@ -37,10 +37,10 @@ function App() {
 
   React.useEffect(() => {
     console.log("coutny");
-    axios.get("https://ip-api.com/json/?fields=country").then(response => {
-      console.log(response);
-      setCurrentCountry(response.data.country);
-    });
+    setCurrentCountry("India");
+    // axios.get("http://ip-api.com/json").then(response => {
+    //   setCurrentCountry(response.data.country);
+    // });
     if (data && currentCountry) {
       console.log(currentCountry);
       data.table[0].forEach(countryDetails => {

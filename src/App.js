@@ -37,7 +37,7 @@ function App() {
 
   React.useEffect(() => {
     console.log("coutny");
-    axios.get("http://ip-api.com/json/?fields=country").then(response => {
+    axios.get("https://ip-api.com/json/?fields=country").then(response => {
       console.log(response);
       setCurrentCountry(response.data.country);
     });

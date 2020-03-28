@@ -83,17 +83,17 @@ function App() {
 
         <TotalStats
           place="World"
-          value={data.table[0][200].NewCases}
+          value={data.table[0][201].NewCases}
           title="New Cases"
         />
         <TotalStats
           place="World"
-          value={data.table[0][200].NewDeaths}
+          value={data.table[0][201].NewDeaths}
           title="New Deaths"
         />
         <TotalStats
           place="World"
-          value={data.table[0][200].Serious_Critical}
+          value={data.table[0][201].Serious_Critical}
           title="Critical Cases"
         />
       </div>

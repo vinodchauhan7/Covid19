@@ -55,27 +55,83 @@ const GeoChartComponent = props => {
         <div className="country">
           <h2>My Country</h2>
           <span>{props.countryDetails.Country}</span>
-          <span>TotalCases: {props.countryDetails.TotalCases}</span>
-          <span>NewCases: {props.countryDetails.NewCases}</span>
-          <span>TotalDeaths: {props.countryDetails.TotalDeaths}</span>
-          <span>TotalRecovered: {props.countryDetails.TotalRecovered}</span>
-          <span>ActiveCases: {props.countryDetails.ActiveCases}</span>
-          <span>TotCases_1M_Pop: {props.countryDetails.TotCases_1M_Pop}</span>
+          <span>
+            TotalCases:{" "}
+            {props.countryDetails.TotalCases !== ""
+              ? props.countryDetails.TotalCases
+              : 0}
+          </span>
+          <span>
+            NewCases:{" "}
+            {props.countryDetails.NewCases !== ""
+              ? props.countryDetails.NewCases
+              : 0}
+          </span>
+          <span>
+            TotalDeaths:{" "}
+            {props.countryDetails.TotalDeaths !== ""
+              ? props.countryDetails.TotalDeaths
+              : 0}
+          </span>
+          <span>
+            TotalRecovered:{" "}
+            {props.countryDetails.TotalRecovered !== ""
+              ? props.countryDetails.TotalRecovered
+              : 0}
+          </span>
+          <span>
+            ActiveCases:{" "}
+            {props.countryDetails.ActiveCases !== ""
+              ? props.countryDetails.ActiveCases
+              : 0}
+          </span>
+          <span>
+            TotCases_1M_Pop:{" "}
+            {props.countryDetails.TotCases_1M_Pop !== ""
+              ? props.countryDetails.TotCases_1M_Pop
+              : 0}
+          </span>
         </div>
         <div className="country">
           <h2>Selected Country</h2>
           {selectedCountryFeature ? (
             <>
               <span>{selectedCountryFeature.Country}</span>
-              <span>TotalCases: {selectedCountryFeature.TotalCases}</span>
-              <span>NewCases: {selectedCountryFeature.NewCases}</span>
-              <span>TotalDeaths: {selectedCountryFeature.TotalDeaths}</span>
               <span>
-                TotalRecovered: {selectedCountryFeature.TotalRecovered}
+                TotalCases:{" "}
+                {selectedCountryFeature.TotalCases !== ""
+                  ? selectedCountryFeature.TotalCases
+                  : 0}
               </span>
-              <span>ActiveCases: {selectedCountryFeature.ActiveCases}</span>
               <span>
-                TotCases_1M_Pop: {selectedCountryFeature.TotCases_1M_Pop}
+                NewCases:{" "}
+                {selectedCountryFeature.NewCases !== ""
+                  ? selectedCountryFeature.NewCases
+                  : 0}
+              </span>
+              <span>
+                TotalDeaths:{" "}
+                {selectedCountryFeature.TotalDeaths !== ""
+                  ? selectedCountryFeature.TotalDeaths
+                  : 0}
+              </span>
+              <span>
+                TotalRecovered:{" "}
+                {selectedCountryFeature.TotalRecovered !== ""
+                  ? selectedCountryFeature.TotalRecovered
+                  : 0}
+              </span>
+              <span>
+                ActiveCases:{" "}
+                {selectedCountryFeature.ActiveCases !== ""
+                  ? selectedCountryFeature.ActiveCases
+                  : 0}
+              </span>
+              <span>
+                TotCases_1M_Pop:{" "}
+                {selectedCountryFeature.TotCases_1M_Pop !== ""
+                  ? selectedCountryFeature.TotCases_1M_Pop
+                  : 0}
               </span>
             </>
           ) : (

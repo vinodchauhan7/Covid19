@@ -6,7 +6,7 @@ const TotalStats = props => {
     <div className="totalstat">
       <div className="title">{props.title}</div>
       <div className="place">{props.place}</div>
-      <div className="value">{props.value > 0 ? props.value : 0}</div>
+      <div className="value">{props.value !== "" ? props.value : 0}</div>
     </div>
   );
 };

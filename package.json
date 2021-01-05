@@ -5,7 +5,7 @@
     "proxy": "https://covid19-server.chrismichael.now.sh/api/v1",
     "homepage": "http://vinodchauhan7.github.io/Covid19",
     "dependencies": {
-        "axios": "^0.19.2",
+        "axios": "^0.21.1",
         "covid19-api": "^1.0.8",
         "d3": "^5.12.0",
         "react": "^16.10.2",
